@@ -8,7 +8,7 @@ export const App = () => {
     
     return (
         <div>
-            <h1>Equipos del Mundo</h1>
+            <h1>Ingresa un nombre en el campo de texto</h1>
             <AddCategory setEquipos = {setEquipos}/>
             <ul>
                 {

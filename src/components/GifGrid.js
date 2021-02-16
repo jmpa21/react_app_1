@@ -1,20 +1,18 @@
-import React from 'react'
-//import { peticionHTTP } from '../helpers/peticion';
+import React  from 'react'
 import { useGif } from '../hooks/useGif';
 import { GifGridItem } from './GifGridItem';
 
 export const GifGrid = ({teams}) => {
     
-
-    const {data:imagenes, loading} = useGif(teams);
     
+    const {data:nuevo, loading} = useGif(teams);
     
     return (
         <div>
             {teams}
-            {loading && <p>Caegando...</p>}
+            {loading && <p>Cargando...</p>}
             {
-                imagenes.map(img => 
+                nuevo.map(img => 
                     <GifGridItem
                         key = {img}
                         {...img}

@@ -6,7 +6,7 @@ export const peticionHTTP = async(teams) => {
         return{
             id: img.id,
             title: img.title,
-            url: img.images?.downsized.url
+            url: img.images?.downsized_still.url
         }
     })
     return gifs;

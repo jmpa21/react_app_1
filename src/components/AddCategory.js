@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 export const AddCategory = ({setEquipos}) => {
     const [entrada, setEntrada] = useState('');
-    
+
     const enter = (e) => {
         setEntrada(e.target.value);
     }
@@ -14,7 +14,7 @@ export const AddCategory = ({setEquipos}) => {
             setEntrada("");
         }
     }
-   
+
     return (
         <form onSubmit = {submit}>
             <input
